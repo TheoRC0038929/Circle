@@ -37,11 +37,11 @@ namespace Circle
                 radius = 0;
             }
 
-            double area = 2 * Math.PI * radius;
-            label1.Text = "Area =" + area;
+            double circumference = 2 * Math.PI * radius;
+            label1.Text = "Circumference =" + circumference;
 
-            double circumference = Math.PI * (radius * radius);
-            label2.Text = "Circumference =" + circumference;
+            double area = Math.PI * (radius * radius);
+            label2.Text = "Area =" + area;
 
         }
     }
