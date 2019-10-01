@@ -21,5 +21,28 @@ namespace Circle
         {
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            
+            double radius;
+
+            try
+            {
+                radius = double.Parse(Textbox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show(Textbox1.Text + " , this doesnt look like a number");
+                radius = 0;
+            }
+
+            double area = 2 * Math.PI * radius;
+            label1.Text = "Area =" + area;
+
+            double circumference = Math.PI * (radius * radius);
+            label2.Text = "Circumference =" + circumference;
+
+        }
     }
 }
